@@ -213,7 +213,7 @@ def main(setupf, runf):
 
             if hasattr(event, 'key'):
 
-                keyPressList = pygame.key.get_pressed()
+                keyPressList = [pygame.key.get_pressed()[i] for i in range(0,len(pygame.key.get_pressed()))]
 
                 if keyPressValue:
                     keyReleaseValue = event.key
