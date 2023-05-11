@@ -111,6 +111,8 @@ def getkeyPressValue():
 def getkeyRelease():
     return keyReleaseValue
 
+def getMouseLocation():
+    return pygame.mouse.get_pos
 
 def setup():
     pygame.init()
